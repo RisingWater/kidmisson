@@ -1,0 +1,135 @@
+﻿.text_title
+{
+    font-size: 24px;
+    font-family:"微软雅黑";
+    font-weight:bold;
+}
+
+.weeky_progress_block
+{
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.weeky_progress_out
+{
+    width: 100%;
+    background-color: #777777;
+}
+
+.weeky_progress_in {
+    height: 20px;
+    background-color: #FF8933;
+}
+
+.weeky_progress_point
+{
+    float:left;
+    width: 100%;
+    height: 20px;
+    font-size:12px;
+    font-family:"微软雅黑";
+    font-weight:bold;
+    text-align:center;
+    color:#ffffff
+}
+
+.weeky_point 
+{
+    width: 5%; background-color: #FF8800;
+}
+
+.weeky_award
+{
+    display:inline-block;
+    font-size:12px;
+    font-family:"微软雅黑";
+    font-weight:bold;
+    line-height:24px;
+}
+
+.weeky_award_button
+{
+    float:right;
+    width:80px;
+    height:22px;
+    font-size:12px;
+    font-family:"微软雅黑";
+    background-color: #3887c5;
+    text-align:center;
+    border-radius:5px;
+    color:#ffffff;
+    padding-top:3px;
+}
+
+.weeky_award_button a:link
+{
+    color:#ffffff;
+    text-decoration:none;
+}
+
+.weeky_award_button a:hover
+{
+    color:#ffffff;
+    text-decoration:underline;
+}
+
+.weeky_award_button a:active
+{
+    color:#ffffff;
+    text-decoration:underline;
+}
+
+.weeky_award_button a:visited
+{
+    color:#ffffff;
+    text-decoration:none;
+}
+
+.daily_mission_block
+{
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.daily_mission_button
+{
+    float:right;
+    width:80px;
+    height:22px;
+    font-size:12px;
+    font-family:"微软雅黑";
+    text-align:center;
+    border-radius:5px;
+    color:#ffffff;
+    padding-top:3px;    
+}
+
+
+.daily_mission_button a:link
+{
+    color:#ffffff;
+    text-decoration:none;
+}
+
+.daily_mission_button a:hover
+{
+    color:#ffffff;
+    text-decoration:underline;
+}
+
+.daily_mission_button a:active
+{
+    color:#ffffff;
+    text-decoration:underline;
+}
+
+.daily_mission_button a:visited
+{
+    color:#ffffff;
+    text-decoration:none;
+}

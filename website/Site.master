@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>乔宝的暑假大冒险</title>
+<link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+<asp:ContentPlaceHolder ID="HeadContent" runat="server">
+</asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="header">
+        <div class="header_title text_center">
+            <asp:Label ID="TitleLabel" runat="server" Text="标题"></asp:Label>
+            <div class="left_point">剩余积分: <asp:Label ID="RestPoint" runat="server" Text="0"></asp:Label>分</div>
+        </div>
+    </div>
+    <div style="height:36px">
+    </div>
+    <div class="main">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+    </div>
+    <div style="height:64px">
+    </div>
+    <div class="footer">
+        <div id="mission" class="footer_menu" onclick="javascript:location.href='./Mission.aspx' ">
+            <div class="footer_image_box">
+                <img class="footer_image" src="image/book.png" alt=""/>
+                <div class="footer_text">任务</div>
+            </div>
+        </div>
+        <div id="box" class="footer_menu" onclick="javascript:location.href='./Award.aspx' ">
+            <div class="footer_image_box">
+                <img class="footer_image" src="image/box.png" alt="" />
+                <div class="footer_text">宝箱</div>
+            </div>
+        </div>
+        <div id="achievement" class="footer_menu" onclick="javascript:location.href='./Achievement.aspx' ">
+            <div class="footer_image_box">
+                <img class="footer_image" src="image/cup.png" alt="" />
+                <div class="footer_text">成就</div>
+            </div>
+        </div>
+        <div id="myitems" class="footer_menu" onclick="javascript:location.href='./Items.aspx' ">
+            <div class="footer_image_box">
+                <img class="footer_image" src="image/person.png" alt=""/>
+                <div class="footer_text">我</div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

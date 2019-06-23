@@ -1,0 +1,97 @@
+﻿.header
+{
+    background: #FF8933;
+    padding: 0px;
+    width: 100%;
+    height: 36px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.left_point
+{
+    background: #FF8933;
+    padding: 0px;
+    height: 36px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    line-height: 36px;
+    font-size: 14px;
+    font-family:"微软雅黑";
+    color: #ffffff
+}
+
+.header_title
+{
+    font-size: 24px;
+    font-family:"微软雅黑";
+    font-weight:bold;
+    color: #ffffff
+}
+
+.main
+{
+    background: #ffffff;
+    padding: 0px;
+    width: 100%;
+}
+
+.footer
+{
+    display: -webkit-flex;
+    display: flex;
+    background: #FF8933;
+    padding: 0px;
+    width: 100%;
+    height: 64px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 0px;
+    border: 0px;
+}
+
+.footer_menu
+{
+    display: inline-block;
+    font-size: 8px;
+    width: 25%;
+    height: 100%;
+    background: #FF8933;
+    text-align: center;
+}
+
+.footer_menu:hover
+{
+    background: #FF6600;
+}
+
+.footer_image_box
+{
+    display: block;
+    width: 40px;
+    margin: 0px auto;
+}
+
+.footer_text
+{
+    font-size: 12px;
+    font-family:"微软雅黑";
+    font-weight:bold;
+    color:#ffffff;
+    text-align:center;
+}
+
+.footer_image
+{
+    width:40px;
+    height:40px;
+}
+
+.text_center
+{
+    text-align: center;
+}
+

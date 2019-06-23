@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <information>
+    <name>乔宝</name>
+    <age>6</age>
+    <school>福州市鼓楼第五中心小学</school>
+    <grade>一年级</grade>
+    <image>qb_head.jpg</image>
+  </information>
+  <wallet>
+    <point>0</point>
+    <animate_piece>0</animate_piece>
+    <toy_piece>0</toy_piece>
+    <food_piece>0</food_piece>
+    <play_piece>0</play_piece>
+  </wallet>
+  <achievement>
+    <achievement_group id="0">
+      <progress>0</progress>
+      <achievement id="0">
+        <description>累计完成口算100题</description>
+        <done>0</done>
+        <point>20</point>
+        <progress>100</progress>
+      </achievement>
+      <achievement id="1">
+        <description>累计完成口算200题</description>
+        <done>0</done>
+        <point>30</point>
+        <progress>200</progress>
+      </achievement>
+      <achievement id="2">
+        <description>累计完成口算400题</description>
+        <done>0</done>
+        <point>40</point>
+        <progress>400</progress>
+      </achievement>
+    </achievement_group>
+    <achievement_group id="1">
+      <progress>0</progress>
+      <achievement id="0">
+        <description>累计大声朗读1个小时</description>
+        <done>0</done>
+        <point>20</point>
+        <progress>4</progress>
+      </achievement>
+      <achievement id="1">
+        <description>累计大声朗读2个小时</description>
+        <done>0</done>
+        <point>30</point>
+        <progress>8</progress>
+      </achievement>
+      <achievement id="3">
+        <description>累计大声朗读4个小时</description>
+        <done>0</done>
+        <point>40</point>
+        <progress>16</progress>
+      </achievement>
+    </achievement_group>
+    <achievement_group id="2">
+      <progress>0</progress>
+      <achievement id="0">
+        <description>累计英语打卡5次</description>
+        <done>0</done>
+        <point>20</point>
+        <progress>5</progress>
+      </achievement>
+      <achievement id="1">
+        <description>累计英语打卡10次</description>
+        <done>0</done>
+        <point>30</point>
+        <progress>10</progress>
+      </achievement>
+      <achievement id="2">
+        <description>累计英语打卡20次</description>
+        <done>0</done>
+        <point>40</point>
+        <progress>20</progress>
+      </achievement>
+    </achievement_group>
+    <achievement_group id="3">
+      <progress>0</progress>
+      <achievement id="0">
+        <description>累计练字3页</description>
+        <done>0</done>
+        <point>15</point>
+        <progress>3</progress>
+      </achievement>
+      <achievement id="1">
+        <description>累计练字7页</description>
+        <done>0</done>
+        <point>25</point>
+        <progress>7</progress>
+      </achievement>
+      <achievement id="2">
+        <description>累计练字15页</description>
+        <done>0</done>
+        <point>35</point>
+        <progress>15</progress>
+      </achievement>
+    </achievement_group>
+    <achievement_group id="4">
+      <progress>0</progress>
+      <achievement id="0">
+        <description>累计写日记5次</description>
+        <done>0</done>
+        <point>20</point>
+        <progress>5</progress>
+      </achievement>
+      <achievement id="1">
+        <description>累计写日记10次</description>
+        <done>0</done>
+        <point>30</point>
+        <progress>10</progress>
+      </achievement>
+      <achievement id="2">
+        <description>累计写日记20次</description>
+        <done>0</done>
+        <point>40</point>
+        <progress>20</progress>
+      </achievement>
+    </achievement_group>
+    <achievement_group id="5">
+      <progress>0</progress>
+      <achievement id="0">
+        <description>独立睡觉3次</description>
+        <done>0</done>
+        <point>15</point>
+        <progress>3</progress>
+      </achievement>
+      <achievement id="1">
+        <description>独立睡觉7次</description>
+        <done>0</done>
+        <point>25</point>
+        <progress>7</progress>
+      </achievement>
+      <achievement id="2">
+        <description>独立睡觉14次</description>
+        <done>0</done>
+        <point>35</point>
+        <progress>15</progress>
+      </achievement>
+    </achievement_group>
+    <achievement_group id="6">
+      <progress>0</progress>
+      <achievement id="0">
+        <description>口算20题全对</description>
+        <done>0</done>
+        <point>15</point>
+        <progress>1</progress>
+      </achievement>
+      <achievement id="1">
+        <description>口算20题全对5次</description>
+        <done>0</done>
+        <point>25</point>
+        <progress>5</progress>
+      </achievement>
+      <achievement id="2">
+        <description>口算20题全对10次</description>
+        <done>0</done>
+        <point>35</point>
+        <progress>10</progress>
+      </achievement>
+    </achievement_group>
+    <achievement_group id="7">
+      <progress>0</progress>
+      <achievement id="0">
+        <description>独立吃饭3次</description>
+        <done>0</done>
+        <point>15</point>
+        <progress>3</progress>
+      </achievement>
+      <achievement id="1">
+        <description>独立吃饭9次</description>
+        <done>0</done>
+        <point>25</point>
+        <progress>9</progress>
+      </achievement>
+      <achievement id="2">
+        <description>独立吃饭21次</description>
+        <done>0</done>
+        <point>35</point>
+        <progress>21</progress>
+      </achievement>
+    </achievement_group>
+    <achievement_group id="8">
+      <progress>0</progress>
+      <achievement id="0">
+        <description>累计获得积分250分</description>
+        <done>0</done>
+        <point>15</point>
+        <progress>250</progress>
+      </achievement>
+      <achievement id="1">
+        <description>累计获得积分1250分</description>
+        <done>0</done>
+        <point>25</point>
+        <progress>1250</progress>
+      </achievement>
+      <achievement id="2">
+        <description>累计获得积分2500分</description>
+        <done>0</done>
+        <point>35</point>
+        <progress>2500</progress>
+      </achievement>
+    </achievement_group>
+    <achievement_group id="9">
+      <progress>0</progress>
+      <achievement id="0">
+        <description>累计打开宝箱20次</description>
+        <done>0</done>
+        <point>15</point>
+        <progress>20</progress>
+      </achievement>
+      <achievement id="1">
+        <description>累计打开宝箱60次</description>
+        <done>0</done>
+        <point>25</point>
+        <progress>60</progress>
+      </achievement>
+      <achievement id="2">
+        <description>累计打开宝箱150次</description>
+        <done>0</done>
+        <point>35</point>
+        <progress>150</progress>
+      </achievement>
+    </achievement_group>
+  </achievement>
+  <week_root>
+    <week id="2019-25" cur_point="0" awarddone0="0" awarddone1="0" awarddone2="0" awarddone3="0" awarddone4="0" />
+  </week_root>
+  <daily_root>
+    <daily id="2019/6/23" MissionState="0" />
+  </daily_root>
+</root>
