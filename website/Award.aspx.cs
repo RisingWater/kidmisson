@@ -14,5 +14,10 @@ public partial class About : System.Web.UI.Page
         {
             title.Text = "宝箱";
         }
+
+        if (HttpUtils.GetUserIdInCookies(Request) == null)
+        {
+            Response.Redirect(@"~/Login.aspx");
+        }
     }
 }

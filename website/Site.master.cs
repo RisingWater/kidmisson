@@ -13,6 +13,6 @@ public partial class SiteMaster : System.Web.UI.MasterPage
 
         PersonInformation info = database.Informaton;
 
-        RestPoint.Text = info.Point.ToString();
+        RestPoint.Text = "剩余积分: " + info.Point.ToString() + "分";
     }
 }

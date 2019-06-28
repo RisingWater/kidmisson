@@ -15,6 +15,11 @@ public partial class Achievement : System.Web.UI.Page
             title.Text = "成就";
         }
 
+        if (HttpUtils.GetUserIdInCookies(Request) == null)
+        {
+            Response.Redirect(@"~/Login.aspx");
+        }
+
         String done = Request.QueryString["done"];
         if (done != null && done.Equals("1"))
         {

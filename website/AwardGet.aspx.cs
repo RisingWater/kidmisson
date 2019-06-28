@@ -95,6 +95,11 @@ public partial class AwardGet : System.Web.UI.Page
             title.Text = "宝箱";
         }
 
+        if (HttpUtils.GetUserIdInCookies(Request) == null)
+        {
+            Response.Redirect(@"~/Login.aspx");
+        }
+
         String weekawardid = Request.QueryString["week_award"];
         String openid = Request.QueryString["openid"];
         if (openid != null)

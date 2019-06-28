@@ -84,7 +84,7 @@ public class DailyMissionState
             }
             else
             {
-                return "./Mission.aspx?done=1&missionindex=" + missionIndex;
+                return "./Mission.aspx?time=" + DateTime.Now.ToShortDateString() + "&done=1&missionindex=" + missionIndex;
             }
         }
     }

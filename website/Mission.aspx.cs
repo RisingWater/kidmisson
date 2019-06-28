@@ -16,30 +16,38 @@ public partial class _Default : System.Web.UI.Page
             title.Text = "任务";
         }
 
-        XmlDatabase database = XmlDatabase.GetInstance;
-        String done = Request.QueryString["done"];
-        if (done != null && done.Equals("1"))
+        if (HttpUtils.GetUserIdInCookies(Request) == null)
         {
-            Int32 missoinId = -1;
-
-            try
-            {
-                missoinId = Convert.ToInt32(Request.QueryString["missionindex"]);
-            }
-            catch (Exception ex)
-            {
-                title.Text = ex.ToString();
-            }
-
-            database.SetDailyMissionDone(missoinId);
+            Response.Redirect(@"~/Login.aspx");
         }
 
         DateTime time = DateTime.Now;
         GregorianCalendar calendar = new GregorianCalendar();
         int weekOfYears = calendar.GetWeekOfYear(time, System.Globalization.CalendarWeekRule.FirstDay, DayOfWeek.Monday);
 
-        String weekKey = time.Year + "-" + weekOfYears;
+        XmlDatabase database = XmlDatabase.GetInstance;
+        String done = Request.QueryString["done"];
+        if (done != null && done.Equals("1"))
+        {
+            String request_time = Request.QueryString["time"];
+            if (String.Compare(request_time, time.ToShortDateString()) == 0)
+            {
+                Int32 missoinId = -1;
 
+                try
+                {
+                    missoinId = Convert.ToInt32(Request.QueryString["missionindex"]);
+                }
+                catch (Exception ex)
+                {
+                    title.Text = ex.ToString();
+                }
+
+                database.SetDailyMissionDone(missoinId);
+            }
+        }
+
+        String weekKey = time.Year + "-" + weekOfYears;
 
         WeekInfo week = database.GetWeekInfo(weekKey);
 

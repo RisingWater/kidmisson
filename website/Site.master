@@ -15,7 +15,7 @@
     <div class="header">
         <div class="header_title text_center">
             <asp:Label ID="TitleLabel" runat="server" Text="标题"></asp:Label>
-            <div class="left_point">剩余积分: <asp:Label ID="RestPoint" runat="server" Text="0"></asp:Label>分</div>
+            <asp:Label ID="RestPoint" runat="server" Text="0" class="left_point"></asp:Label>
         </div>
     </div>
     <div style="height:36px">

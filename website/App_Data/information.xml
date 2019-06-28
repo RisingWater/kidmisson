@@ -228,8 +228,10 @@
   </achievement>
   <week_root>
     <week id="2019-25" cur_point="0" awarddone0="0" awarddone1="0" awarddone2="0" awarddone3="0" awarddone4="0" />
+    <week id="2019-26" cur_point="0" awarddone0="0" awarddone1="0" awarddone2="0" awarddone3="0" awarddone4="0" />
   </week_root>
   <daily_root>
     <daily id="2019/6/23" MissionState="0" />
+    <daily id="2019/6/28" MissionState="0" />
   </daily_root>
 </root>

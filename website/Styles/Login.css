@@ -1,0 +1,45 @@
+﻿.main_view {
+    margin: 0px auto;
+    margin-top:20px;
+    width:80%;
+}
+
+.login_object {
+    margin-top:10px;
+}
+
+.login_text {
+    font-size:16px;
+    font-family:"微软雅黑";
+    font-weight:bold;
+}
+
+.textbox {
+    width:100%;
+    font-size:14px;
+    height: 24px;
+}
+
+.error_div {
+    width: 100%;
+    margin-top:10px;
+    font-size:12px;
+    font-family:"微软雅黑";
+    color:#ff0000;
+    text-align:center;
+}
+
+.login_button
+{
+    margin:0px auto;
+    width:120px;
+    height:32px;
+    background-color:#2dd700;
+    border-radius:5px;
+    text-align:center;
+    color:#ffffff;
+    font-family:"微软雅黑";
+    font-weight:bold;
+    line-height:32px;
+    font-size:16px;
+}
