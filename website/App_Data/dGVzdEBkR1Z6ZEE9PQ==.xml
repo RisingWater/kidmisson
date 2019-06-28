@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root user_id="test_test">
-  <certification username="test" password="test"/>
   <personal_info name="测试" birthday="2012/8/21" school="福州市鼓楼第五中心小学" grade="一年级" image="qb_head.jpg"/>
   <items>
     <item item_id="0" description="动画碎片" image="piece1.png"/>
