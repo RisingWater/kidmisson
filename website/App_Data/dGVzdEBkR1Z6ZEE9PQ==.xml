@@ -8,7 +8,7 @@
     <item item_id="3" description="陪玩碎片" image="piece4.png" exchange_unit="10" />
   </items>
   <pocket>
-    <wallet point="97850" />
+    <wallet point="98080" />
     <pocket_item item_id="0" number="43" />
     <pocket_item item_id="1" number="88" />
     <pocket_item item_id="2" number="74" />
@@ -46,35 +46,35 @@
     </award_box>
   </award>
   <achievement>
-    <achievement_group achievement_group_id="0" progress="0">
-      <achievement achievement_id="0" description="累计完成口算100题" done="0" target="100" award="20" />
-      <achievement achievement_id="1" description="累计完成口算200题" done="0" target="200" award="30" />
-      <achievement achievement_id="2" description="累计完成口算400题" done="0" target="400" award="40" />
+    <achievement_group achievement_group_id="0" progress="480">
+      <achievement achievement_id="0" description="完成口算100题" done="1" target="100" award="20" />
+      <achievement achievement_id="1" description="完成口算200题" done="1" target="200" award="30" />
+      <achievement achievement_id="2" description="完成口算400题" done="1" target="400" award="40" />
     </achievement_group>
     <achievement_group achievement_group_id="1" progress="0">
-      <achievement achievement_id="0" description="累计大声朗读1个小时" done="0" target="4" award="20" />
-      <achievement achievement_id="1" description="累计大声朗读2个小时" done="0" target="8" award="30" />
-      <achievement achievement_id="2" description="累计大声朗读4个小时" done="0" target="16" award="40" />
+      <achievement achievement_id="0" description="大声朗读1个小时" done="0" target="4" award="20" />
+      <achievement achievement_id="1" description="大声朗读2个小时" done="0" target="8" award="30" />
+      <achievement achievement_id="2" description="大声朗读4个小时" done="0" target="16" award="40" />
     </achievement_group>
     <achievement_group achievement_group_id="2" progress="0">
-      <achievement achievement_id="0" description="累计英语打卡5次" done="0" target="5" award="20" />
-      <achievement achievement_id="1" description="累计英语打卡10次" done="0" target="10" award="20" />
-      <achievement achievement_id="2" description="累计英语打卡20次" done="0" target="20" award="20" />
+      <achievement achievement_id="0" description="英语打卡5次" done="0" target="5" award="20" />
+      <achievement achievement_id="1" description="英语打卡10次" done="0" target="10" award="20" />
+      <achievement achievement_id="2" description="英语打卡20次" done="0" target="20" award="20" />
     </achievement_group>
     <achievement_group achievement_group_id="3" progress="0">
-      <achievement achievement_id="0" description="累计练字3页" done="0" target="3" award="15" />
-      <achievement achievement_id="1" description="累计练字7页" done="0" target="7" award="25" />
-      <achievement achievement_id="2" description="累计练字15页" done="0" target="15" award="35" />
+      <achievement achievement_id="0" description="练字3页" done="0" target="3" award="15" />
+      <achievement achievement_id="1" description="练字7页" done="0" target="7" award="25" />
+      <achievement achievement_id="2" description="练字15页" done="0" target="15" award="35" />
     </achievement_group>
     <achievement_group achievement_group_id="4" progress="0">
-      <achievement achievement_id="0" description="累计写日记5次" done="0" target="5" award="20" />
-      <achievement achievement_id="1" description="累计写日记10次" done="0" target="10" award="30" />
-      <achievement achievement_id="2" description="累计写日记20次" done="0" target="20" award="40" />
+      <achievement achievement_id="0" description="写日记5次" done="0" target="5" award="20" />
+      <achievement achievement_id="1" description="写日记10次" done="0" target="10" award="30" />
+      <achievement achievement_id="2" description="写日记20次" done="0" target="20" award="40" />
     </achievement_group>
     <achievement_group achievement_group_id="5" progress="0">
-      <achievement achievement_id="0" description="独立睡觉3次" done="0" target="3" award="15" />
-      <achievement achievement_id="1" description="独立睡觉7次" done="0" target="7" award="25" />
-      <achievement achievement_id="2" description="独立睡觉15次" done="0" target="15" award="35" />
+      <achievement achievement_id="0" description="睡觉3次" done="0" target="3" award="15" />
+      <achievement achievement_id="1" description="睡觉7次" done="0" target="7" award="25" />
+      <achievement achievement_id="2" description="睡觉15次" done="0" target="15" award="35" />
     </achievement_group>
     <achievement_group achievement_group_id="6" progress="0">
       <achievement achievement_id="0" description="口算20题全对" done="0" target="1" award="15" />
@@ -87,14 +87,14 @@
       <achievement achievement_id="2" description="独立吃饭21次" done="0" target="21" award="35" />
     </achievement_group>
     <achievement_group achievement_group_id="8" progress="0">
-      <achievement achievement_id="0" description="累计获得积分250分" done="0" target="250" award="15" />
-      <achievement achievement_id="1" description="累计获得积分1250分" done="0" target="1250" award="25" />
-      <achievement achievement_id="2" description="累计获得积分2500分" done="0" target="2500" award="35" />
+      <achievement achievement_id="0" description="获得任务积分250分" done="0" target="250" award="15" />
+      <achievement achievement_id="1" description="获得任务积分1250分" done="0" target="1250" award="25" />
+      <achievement achievement_id="2" description="获得任务积分2500分" done="0" target="2500" award="35" />
     </achievement_group>
     <achievement_group achievement_group_id="8" progress="0">
-      <achievement achievement_id="0" description="累计打开宝箱20次" done="0" target="20" award="15" />
-      <achievement achievement_id="1" description="累计打开宝箱60次" done="0" target="60" award="25" />
-      <achievement achievement_id="2" description="累计打开宝箱150次" done="0" target="150" award="35" />
+      <achievement achievement_id="0" description="打开宝箱20次" done="0" target="20" award="15" />
+      <achievement achievement_id="1" description="打开宝箱60次" done="0" target="60" award="25" />
+      <achievement achievement_id="2" description="打开宝箱150次" done="0" target="150" award="35" />
     </achievement_group>
   </achievement>
   <missions>
@@ -218,6 +218,18 @@
       <record time="2019/6/24 00:01:02" description="完成任务XXXXXXX" point="10" />
       <record time="2019/6/24 00:01:02" description="获得成就XXXXXXX" point="20" />
       <record time="2019/6/24 00:01:02" description="获得每周奖励" point="30" />
+      <record time="2019/6/30 1:35:48" description="累计完成口算100题, 成就奖励20分" point="20" />
+      <record time="2019/6/30 1:37:18" description="完成成就&quot;累计完成口算100题&quot;" point="20" />
+      <record time="2019/6/30 1:38:57" description="获得成就&quot;累计完成口算100题&quot;" point="20" />
+      <record time="2019/6/30 1:39:02" description="获得成就&quot;累计完成口算100题&quot;" point="20" />
+      <record time="2019/6/30 1:44:50" description="获得成就&quot;完成口算200题&quot;" point="30" />
+      <record time="2019/6/30 1:44:54" description="获得成就&quot;完成口算400题&quot;" point="40" />
+      <record time="2019/6/30 1:44:59" description="获得成就&quot;完成口算400题&quot;" point="40" />
+      <record time="2019/6/30 1:45:54" description="获得成就&quot;完成口算200题&quot;" point="30" />
+      <record time="2019/6/30 1:48:04" description="获得成就&quot;完成口算200题&quot;" point="30" />
+      <record time="2019/6/30 1:48:29" description="获得成就&quot;完成口算100题&quot;" point="20" />
+      <record time="2019/6/30 1:48:34" description="获得成就&quot;完成口算200题&quot;" point="30" />
+      <record time="2019/6/30 1:48:38" description="获得成就&quot;完成口算400题&quot;" point="40" />
     </records>
   </historys>
 </root>

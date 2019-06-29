@@ -69,7 +69,7 @@ public class HistoryRecordsModel : BaseModel
         if (point != 0)
         {
             attr = doc.CreateAttribute("point");
-            attr.Value = description;
+            attr.Value = point.ToString();
             node.Attributes.Append(attr);
         }
 

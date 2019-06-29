@@ -12,6 +12,7 @@ public class MainDatabase : Database
     private PocketModule m_pPocket;
     private HistoryModel m_pHistory;
     private AwardModel m_pAward;
+    private AchievementsModel m_pAchievements;
 
 	public MainDatabase(String userid)
 	{
@@ -24,6 +25,7 @@ public class MainDatabase : Database
         InitPocket();
         InitHistory();
         InitAward();
+        InitAchievements();
 	}
 
     public PersonInfoModel GetUserInfo()
@@ -62,6 +64,11 @@ public class MainDatabase : Database
         return m_pAward;
     }
 
+    public AchievementsModel GetAchievementsModel()
+    {
+        return m_pAchievements;
+    }
+
     private void InitPersonInfo()
     {
         XmlNode node = m_pDoc.SelectSingleNode(@"root/personal_info");
@@ -97,5 +104,11 @@ public class MainDatabase : Database
     {
         XmlNode node = m_pDoc.SelectSingleNode(@"root/award");
         m_pAward = new AwardModel(node, this);
+    }
+
+    private void InitAchievements()
+    {
+        XmlNode node = m_pDoc.SelectSingleNode(@"root/achievement");
+        m_pAchievements = new AchievementsModel(node, this);
     }
 }
