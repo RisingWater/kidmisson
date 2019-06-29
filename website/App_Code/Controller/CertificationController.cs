@@ -12,6 +12,21 @@ public class CertificationController
         m_DbRef = CertificationDatabase.GetInstance();
 	}
 
+    public Boolean IsUserIdValid(String userid)
+    {
+        List<CertificationModel> list = m_DbRef.GetAllCertificats();
+
+        foreach (CertificationModel tmp in list)
+        {
+            if (String.Compare(userid, tmp.UserId, true) == 0)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     public String GetUserId(String username, String password)
     {
         String userid = null;

@@ -84,7 +84,7 @@ public class RecordController
             foreach (HistoryRecordModel tmp in detailmodels)
             {
                 DetailController c = new DetailController(tmp);
-                detaillist.Add(c);
+                detaillist.Insert(0, c);
             }
         }
 

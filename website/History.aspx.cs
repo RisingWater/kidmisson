@@ -20,7 +20,7 @@ public partial class History : System.Web.UI.Page
         m_szUserId = HttpUtils.GetUserIdInCookies(Request);
         if (m_szUserId == null)
         {
-            Response.Redirect(@"~/Login.aspx");
+            Response.Redirect(@"~/Index.aspx");
         }
     }
 

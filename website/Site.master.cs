@@ -9,10 +9,24 @@ public partial class SiteMaster : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        XmlDatabase database = XmlDatabase.GetInstance;
-
-        PersonInformation info = database.Informaton;
-
-        RestPoint.Text = "剩余积分: " + info.Point.ToString() + "分";
+        String userid = HttpUtils.GetUserIdInCookies(Request);
+        if (userid != null)
+        {
+            try
+            {
+                PocketController Controller = new PocketController(userid);
+                RestPoint.Text = "剩余积分: " + Controller.Point + "分";
+            }
+            catch
+            {
+                RestPoint.Text = "";
+                RestPoint.Visible = false;
+            }
+        }
+        else
+        {
+            RestPoint.Text = "";
+            RestPoint.Visible = false;
+        }
     }
 }

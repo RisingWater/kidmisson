@@ -1,0 +1,52 @@
+﻿.main_body
+{
+    width:90%;
+    margin:0px auto;
+}
+
+.droplist
+{
+    margin-top:10px;
+    margin-bottom:10px;
+    width:100%;
+    font-size:20px;
+    height:48px;
+}
+
+.detail_view
+{
+    margin-top:20px;
+    width:100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.item
+{
+    font-family:"微软雅黑";
+    margin-left:10px;
+    margin-top:10px;
+}
+
+.item_desciprtion
+{
+    font-size:16px;
+}
+
+.item_time
+{
+    font-size:10px;
+}
+
+.item_point
+{
+    float:right;
+    width:80px;
+    height:26px;
+    font-size:18px;
+    line-height:26px;
+    text-align:center;
+    border:none;
+    font-weight:bold;
+    color:#2dd700;
+}

@@ -1,0 +1,43 @@
+﻿.main_view
+{
+    width:100%;
+    background-image: url(../image/index.jpg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: 100%;
+}
+
+.pic_view
+{
+    width:90%;
+    height:80%;
+    margin:0px auto;
+}
+
+.title_view
+{
+    width:100%;
+    height:30%;
+    background-image: url(../image/title.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.login_object {
+    margin-top:20px;
+}
+
+.login_button
+{
+    margin:0px auto;
+    width:240px;
+    height:64px;
+    background-color:#2dd700;
+    border-radius:15px;
+    text-align:center;
+    color:#ffffff;
+    font-family:"微软雅黑";
+    font-weight:bold;
+    line-height:64px;
+    font-size:32px;
+}

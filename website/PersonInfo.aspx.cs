@@ -23,7 +23,7 @@ public partial class PersonInfo : System.Web.UI.Page
         m_szUserId = HttpUtils.GetUserIdInCookies(Request);
         if (m_szUserId == null)
         {
-            Response.Redirect(@"~/Login.aspx");
+            Response.Redirect(@"~/Index.aspx");
         }
 
         PersonInfoController personController = new PersonInfoController(m_szUserId);

@@ -8,11 +8,11 @@
     <item item_id="3" description="陪玩碎片" image="piece4.png" exchange_unit="10" />
   </items>
   <pocket>
-    <wallet point="97870" />
-    <pocket_item item_id="0" number="61" />
+    <wallet point="97850" />
+    <pocket_item item_id="0" number="43" />
     <pocket_item item_id="1" number="88" />
     <pocket_item item_id="2" number="74" />
-    <pocket_item item_id="3" number="70" />
+    <pocket_item item_id="3" number="60" />
   </pocket>
   <award>
     <award_box award_id="0" description="铜宝箱" cost="10" image="bronze.png">
@@ -171,6 +171,11 @@
       <record time="2019/6/29 17:10:22" description="成功兑换玩具碎片 x 10个" />
       <record time="2019/6/29 17:10:24" description="成功兑换美食碎片 x 10个" />
       <record time="2019/6/29 17:10:28" description="成功兑换陪玩碎片 x 10个" />
+      <record time="2019/6/29 23:35:33" description="成功兑换动画碎片 x 5个" />
+      <record time="2019/6/29 23:35:36" description="成功兑换动画碎片 x 5个" />
+      <record time="2019/6/29 23:35:45" description="成功兑换动画碎片 x 5个" />
+      <record time="2019/6/30 0:28:23" description="成功兑换动画碎片 x 5个" />
+      <record time="2019/6/30 0:28:28" description="成功兑换陪玩碎片 x 10个" />
     </records>
     <records record_id="1" description="奖励记录">
       <record time="2019/6/24 00:01:02" description="打开白金宝箱，奖励100元玩具" />
@@ -207,6 +212,7 @@
       <record time="2019/6/29 17:10:09" description="成功开启金宝箱,获得动画碎片4个" />
       <record time="2019/6/29 17:10:15" description="成功开启银宝箱,获得动画碎片3个" />
       <record time="2019/6/29 17:39:49" description="成功开启白金宝箱,获得课外书一本" />
+      <record time="2019/6/29 23:34:59" description="成功开启银宝箱,获得动画碎片2个" />
     </records>
     <records record_id="2" description="积分获取记录">
       <record time="2019/6/24 00:01:02" description="完成任务XXXXXXX" point="10" />

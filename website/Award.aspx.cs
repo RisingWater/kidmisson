@@ -20,7 +20,7 @@ public partial class Award : System.Web.UI.Page
         m_szUserId = HttpUtils.GetUserIdInCookies(Request);
         if (m_szUserId == null)
         {
-            Response.Redirect(@"~/Login.aspx");
+            Response.Redirect(@"~/Index.aspx");
         }
     }
 
@@ -62,17 +62,23 @@ public partial class Award : System.Web.UI.Page
             if (itemController.OpenBox(ref item_name) == false)
             {
                 Text = "开启" + itemController.Description + "失败";
+
+                ClientScript.RegisterStartupScript(ClientScript.GetType(),
+                    "OpenFailScript",
+                    "<script>swal('" + Text + "').then((value) => {window.location.href='Award.aspx';});</script>");
             }
             else
             {
                 Text = "成功开启" + itemController.Description + ",获得" + item_name;
                 RecordController.AddDetail(m_szUserId, ModelParam.AWARD_RECORD_ID, Text, 0);
+
+                Response.Redirect("~/AwardGet.aspx?Image=~/image/" + itemController.AwardImageFileName
+                    + "&Target=" + itemController.Description
+                    + "&Award=" + item_name
+                    + "&BackUrl=~/Award.aspx");
             }
 
-            Response.Redirect("~/AwardGet.aspx?Image=~/image/" + itemController.AwardImageFileName
-                + "&Target=" + itemController.Description
-                + "&Award=" + item_name
-                + "&BackUrl=~/Award.aspx");
+
         }
     }
 }

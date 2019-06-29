@@ -13,6 +13,19 @@ public class HttpUtils
             return null;
         }
 
-        return cookie.Value;
+        if (cookie.Value == null)
+        {
+            return null;
+        }
+
+        CertificationController c = new CertificationController();
+        if (c.IsUserIdValid(cookie.Value))
+        {
+            return cookie.Value;
+        }
+        else
+        {
+            return null;
+        }
     }
 }

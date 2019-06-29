@@ -19,7 +19,7 @@ public partial class AwardGet : System.Web.UI.Page
 
         if (HttpUtils.GetUserIdInCookies(Request) == null)
         {
-            Response.Redirect(@"~/Login.aspx");
+            Response.Redirect(@"~/Index.aspx");
         }
 
         String imagePath = Request.QueryString["Image"];
@@ -34,11 +34,20 @@ public partial class AwardGet : System.Web.UI.Page
 
         ItemName.Text = Award;
 
-        String m_szBackUrl = Request.QueryString["BackUrl"];
+        String BackUrl = Request.QueryString["BackUrl"];
+
+        m_szBackUrl = BackUrl;
     }
 
     protected void Back_Click(object sender, EventArgs e)
     {
-        Response.Redirect(m_szBackUrl);
+        if (m_szBackUrl != null)
+        {
+            Response.Redirect(m_szBackUrl);
+        }
+        else
+        {
+            Response.Redirect("~/Index.aspx");
+        }
     }
 }

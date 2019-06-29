@@ -15,12 +15,6 @@ public partial class Login : System.Web.UI.Page
             title.Text = "登录";
         }
 
-        Label RestPoint = (Label)Master.FindControl("RestPoint");
-        if (RestPoint != null)
-        {
-            RestPoint.Visible = false;
-        }
-
         ErrorMessageLabel.Visible = false;
     }
 
