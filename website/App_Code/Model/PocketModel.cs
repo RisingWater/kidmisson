@@ -6,7 +6,7 @@ using System.Xml;
 
 public class PocketPointModel : BaseModel
 {
-	public PocketPointModel(XmlNode node) : base(node)
+	public PocketPointModel(XmlNode node, Database db) : base(node, db)
 	{
 		
 	}
@@ -15,36 +15,39 @@ public class PocketPointModel : BaseModel
     {
         get
         {
-            Int32 Id;
-            try
+            Int32 Id = 0;
+            String tmp = getAttributesValue(@"point");
+            if (tmp != null)
             {
-                Id = Convert.ToInt32(getAttributesValue(@"point"));
-            }
-            catch
-            {
-                Id = -1;
+                Id = Convert.ToInt32(tmp);
             }
 
             return Id;
         }
     }
 
-    public void UpdatePoint(Int32 delta)
+    public Boolean UpdatePoint(Int32 delta)
     {
+        Boolean ret = false;
         Lock();
 
         Int32 NewPoint = Point + delta;
 
-        setAttributesValue(@"point", NewPoint.ToString());
+        if (NewPoint >= 0)
+        {
+            setAttributesValue(@"point", NewPoint.ToString());
+            ret = true;
+        }
 
         Unlock();
+
+        return ret;
     }
 }
 
 public class PocketItemModule : BaseModel
 {
-    public PocketItemModule(XmlNode node)
-        : base(node)
+    public PocketItemModule(XmlNode node, Database db) : base(node, db)
 	{
 		
 	}
@@ -53,14 +56,11 @@ public class PocketItemModule : BaseModel
     {
         get
         {
-            Int32 Id;
-            try
+            Int32 Id = -1;
+            String tmp = getAttributesValue(@"item_id");
+            if (tmp != null)
             {
-                Id = Convert.ToInt32(getAttributesValue(@"item_id"));
-            }
-            catch
-            {
-                Id = -1;
+                Id = Convert.ToInt32(tmp);
             }
 
             return Id;
@@ -71,29 +71,37 @@ public class PocketItemModule : BaseModel
     {
         get
         {
-            Int32 Id;
-            try
+            Int32 Id = 0;
+            String tmp = getAttributesValue(@"number");
+            if (tmp != null)
             {
-                Id = Convert.ToInt32(getAttributesValue(@"number"));
-            }
-            catch
-            {
-                Id = -1;
+                Id = Convert.ToInt32(tmp);
             }
 
             return Id;
         }
     }
 
-    public void UpdateNumber(Int32 delta)
+    public Boolean UpdateNumber(Int32 delta)
     {
+        Boolean ret = true;
         Lock();
 
         Int32 NewPoint = Number + delta;
 
-        setAttributesValue(@"point", NewPoint.ToString());
+        if (NewPoint >= 0)
+        {
+            setAttributesValue(@"number", NewPoint.ToString());
+            ret = true;
+        }
+        else
+        {
+            ret = false;
+        }
 
         Unlock();
+
+        return ret;
     }
 }
 
@@ -102,18 +110,18 @@ public class PocketModule
     private PocketPointModel m_pWalletPointModel;
     private List<PocketItemModule> m_pWalletItemModule;
 
-    public PocketModule(XmlNode node)
+    public PocketModule(XmlNode node, Database db)
 	{
         XmlNode wallet = null;
 
         wallet = node.SelectSingleNode("wallet");
-        m_pWalletPointModel = new PocketPointModel(wallet);
+        m_pWalletPointModel = new PocketPointModel(wallet, db);
 
         XmlNodeList list = node.SelectNodes("pocket_item");
-
+        m_pWalletItemModule = new List<PocketItemModule>();
         foreach (XmlNode tmp in list)
         {
-            PocketItemModule item = new PocketItemModule(tmp);
+            PocketItemModule item = new PocketItemModule(tmp, db);
             m_pWalletItemModule.Add(item);
         }
 	}

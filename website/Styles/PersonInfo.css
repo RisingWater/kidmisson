@@ -52,7 +52,38 @@
 {
     font-family:"微软雅黑";
     margin-left:10px;
-    margin-top:5px;
+    margin-top:10px;
     font-size: 16px;
     font-weight:bold;
+}
+
+.exchange_button
+{
+    float:right;
+    width:80px;
+    height:22px;
+    font-size:14px;
+    line-height:22px;
+    font-family:"微软雅黑";
+    background-color: #3887c5;
+    text-align:center;
+    border-radius:5px;
+    color:#ffffff;
+    border:none;
+}
+
+.history_botton
+{
+    margin:0px auto;
+    margin-top:20px;
+    width:120px;
+    height:32px;
+    background-color:#2dd700;
+    border-radius:5px;
+    text-align:center;
+    color:#ffffff;
+    font-family:"微软雅黑";
+    font-weight:bold;
+    line-height:32px;
+    font-size:16px;
 }

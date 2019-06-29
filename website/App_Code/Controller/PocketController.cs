@@ -5,29 +5,54 @@ using System.Web;
 
 public class PocketItemController
 {
-    private String m_pUserid;
     private PocketItemModule m_pModule;
+    private MainDatabase m_pDB;
 
-    public PocketItemController(PocketItemModule module)
+    public PocketItemController(PocketItemModule module, MainDatabase db)
     {
         m_pModule = module;
+        m_pDB = db;
     }
 
-    //public String Description
-    //{
-    //    get
-    //    {
-    //        ItemModel model = 
-    //    }
-    //}
+    public Int32 Id
+    {
+        get
+        {
+            return m_pModule.Id;
+        }
+    }
 
-    //public String ItemImageFileName
-    //{
-    //    get
-    //    {
-    //        return getAttributesValue(@"image");
-    //    }
-    //}
+    public String Description
+    {
+        get
+        {
+            ItemModel model = m_pDB.GetItemModel(m_pModule.Id);
+            if (model != null)
+            {
+                return model.Description;
+            }
+            else
+            {
+                return "";
+            }
+        }
+    }
+
+    public String ItemImageFileName
+    {
+        get
+        {
+            ItemModel model = m_pDB.GetItemModel(m_pModule.Id);
+            if (model != null)
+            {
+                return model.ItemImageFileName;
+            }
+            else
+            {
+                return "";
+            }
+        }
+    }
 
     public Int32 Number
     {
@@ -37,22 +62,38 @@ public class PocketItemController
         }
     }
 
-    public void UpdateNumber(Int32 delta)
+    public Int32 ExchangeUnit
     {
-        m_pModule.UpdateNumber(delta);
+        get
+        {
+            ItemModel model = m_pDB.GetItemModel(m_pModule.Id);
+            if (model != null)
+            {
+                return model.ExchangeUnit;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+    }
 
-        return;
+    public Boolean Exchange()
+    {
+        Int32 delta = -1 * ExchangeUnit;
+        return m_pModule.UpdateNumber(delta);
     }
 }
 
 public class PocketController
 {
     private PocketModule m_pModel;
-
+    private MainDatabase m_pDB;
+    
     public PocketController(String userid)
     {
-        MainDatabase db = MainDatabaseManager.GetDatabase(userid);
-        m_pModel = db.GetPocketModel();
+        m_pDB = MainDatabaseManager.GetDatabase(userid);
+        m_pModel = m_pDB.GetPocketModel();
     }
 
     public Int32 Point
@@ -63,10 +104,9 @@ public class PocketController
         }
     }
 
-    public void UpdatePoint(Int32 delta)
+    public Boolean UpdatePoint(Int32 delta)
     {
-        m_pModel.Point.UpdatePoint(delta);
-        return;
+        return m_pModel.Point.UpdatePoint(delta);
     }
 
     public List<PocketItemController> ItemList
@@ -76,11 +116,32 @@ public class PocketController
             List<PocketItemController> ret = new List<PocketItemController>();
             foreach (PocketItemModule tmp in m_pModel.ItemList)
             {
-                PocketItemController item = new PocketItemController(tmp);
+                PocketItemController item = new PocketItemController(tmp, m_pDB);
                 ret.Add(item);
             }
 
             return ret;
         }
+    }
+
+    static public List<PocketItemController> GetItemList(String userid)
+    {
+        PocketController Controller = new PocketController(userid);
+
+        return Controller.ItemList;
+    }
+
+    static public PocketItemController GetItem(String userid, Int32 item_id)
+    {
+        List<PocketItemController> list = PocketController.GetItemList(userid);
+        foreach (PocketItemController tmp in list)
+        {
+            if (tmp.Id == item_id)
+            {
+                return tmp;
+            }
+        }
+
+        return null;
     }
 }

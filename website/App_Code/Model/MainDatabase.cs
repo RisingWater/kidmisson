@@ -5,34 +5,27 @@ using System.Web;
 using System.Xml;
 using System.Threading;
 
-public class MainDatabase
+public class MainDatabase : Database
 {
-    private object m_csLock;
-    private XmlDocument m_pDoc;
     private PersonInfoModel m_pUser;
     private Dictionary<Int32, ItemModel> m_pItemList;
     private PocketModule m_pPocket;
+    private HistoryModel m_pHistory;
+    private AwardModel m_pAward;
 
 	public MainDatabase(String userid)
 	{
         String filename = userid + ".xml";
-        m_csLock = new object();
-        m_pDoc = new XmlDocument();
-        m_pDoc.Load(System.Web.HttpContext.Current.Server.MapPath(filename));
+        m_szDbFilePath = System.Web.HttpContext.Current.Server.MapPath(ModelParam.DATA_PATH + filename);
+        m_pDoc.Load(m_szDbFilePath);
 
         InitPersonInfo();
         InitItemList();
+        InitPocket();
+        InitHistory();
+        InitAward();
 	}
 
-    protected void Lock()
-    {
-        Monitor.Enter(m_csLock);
-    }
-
-    protected void Unlock()
-    {
-        Monitor.Exit(m_csLock);
-    }
     public PersonInfoModel GetUserInfo()
     {
         return m_pUser;
@@ -59,10 +52,20 @@ public class MainDatabase
         return m_pPocket;
     }
 
+    public HistoryModel GetHistoryModule()
+    {
+        return m_pHistory;
+    }
+
+    public AwardModel GetAwardModule()
+    {
+        return m_pAward;
+    }
+
     private void InitPersonInfo()
     {
         XmlNode node = m_pDoc.SelectSingleNode(@"root/personal_info");
-        m_pUser = new PersonInfoModel(node);
+        m_pUser = new PersonInfoModel(node, this);
     }
 
     private void InitItemList()
@@ -73,7 +76,7 @@ public class MainDatabase
 
         foreach (XmlNode tmp in list)
         {
-            ItemModel item = new ItemModel(tmp);
+            ItemModel item = new ItemModel(tmp, this);
             m_pItemList.Add(item.Id, item);
         }
     }
@@ -81,6 +84,18 @@ public class MainDatabase
     private void InitPocket()
     {
         XmlNode node = m_pDoc.SelectSingleNode(@"root/pocket");
-        m_pPocket = new PocketModule(node);
+        m_pPocket = new PocketModule(node, this);
+    }
+
+    private void InitHistory()
+    {
+        XmlNode node = m_pDoc.SelectSingleNode(@"root/historys");
+        m_pHistory = new HistoryModel(node, this);
+    }
+
+    private void InitAward()
+    {
+        XmlNode node = m_pDoc.SelectSingleNode(@"root/award");
+        m_pAward = new AwardModel(node, this);
     }
 }

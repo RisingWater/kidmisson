@@ -6,7 +6,7 @@ using System.Xml;
 
 public class ItemModel : BaseModel
 {
-	public ItemModel(XmlNode node) : base(node)
+	public ItemModel(XmlNode node, Database db) : base(node, db)
 	{
         
 	}
@@ -15,14 +15,11 @@ public class ItemModel : BaseModel
     {
         get
         {
-            Int32 Id;
-            try
+            Int32 Id = -1;
+            String tmp = getAttributesValue(@"item_id");
+            if (tmp != null)
             {
-                Id = Convert.ToInt32(getAttributesValue(@"item_id"));
-            }
-            catch
-            {
-                Id = -1;
+                Id = Convert.ToInt32(tmp);
             }
 
             return Id;
@@ -42,6 +39,21 @@ public class ItemModel : BaseModel
         get
         {
             return getAttributesValue(@"image");
+        }
+    }
+
+    public Int32 ExchangeUnit
+    {
+        get
+        {
+            Int32 Id = 0;
+            String tmp = getAttributesValue(@"exchange_unit");
+            if (tmp != null)
+            {
+                Id = Convert.ToInt32(tmp);
+            }
+
+            return Id;
         }
     }
 }

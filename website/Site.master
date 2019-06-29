@@ -44,7 +44,7 @@
                 <div class="footer_text">成就</div>
             </div>
         </div>
-        <div id="myitems" class="footer_menu" onclick="javascript:location.href='./Items.aspx' ">
+        <div id="myitems" class="footer_menu" onclick="javascript:location.href='./PersonInfo.aspx' ">
             <div class="footer_image_box">
                 <img class="footer_image" src="image/person.png" alt=""/>
                 <div class="footer_text">我</div>

@@ -17,7 +17,7 @@
         <asp:Label ID="ItemName" runat="server" Text="XX碎片*X"></asp:Label>
     </div>
     <div style="height:20px"></div>
-    <div class="back_botton"><asp:HyperLink ID="BackButton" runat="server">返回</asp:HyperLink></div>
-    
+    <div class="back_botton" onclick="JAVAscript:document.getElementById('MainContent_BackButton').click();">返回</div>
+    <asp:Button ID="BackButton" runat="server" Text="返回" BorderStyle="None" style="display:none" OnClick="Back_Click" />
 </asp:Content>
 

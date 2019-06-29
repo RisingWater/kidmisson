@@ -6,7 +6,7 @@ using System.Xml;
 
 public class PersonInfoModel : BaseModel
 {
-    public PersonInfoModel(XmlNode node) : base(node)
+    public PersonInfoModel(XmlNode node, Database db) : base(node, db)
     {
 
     }

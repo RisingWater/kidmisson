@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Globalization;
 
 public class PersonInfoController
 {
@@ -55,7 +56,11 @@ public class PersonInfoController
             {
                 try
                 {
-                    time = DateTime.ParseExact(tmp, "yyyy/MM/dd", System.Globalization.CultureInfo.CurrentCulture);
+                    DateTimeFormatInfo dtFormat = new DateTimeFormatInfo();
+
+                    dtFormat.ShortDatePattern = "yyyy/MM/dd";
+
+                    time = Convert.ToDateTime(tmp, dtFormat);
                 }
                 catch
                 {
@@ -76,7 +81,7 @@ public class PersonInfoController
             {
                 tmp = tmp.AddYears(1);
 
-                if (DateTime.Compare(tmp, DateTime.Now) > 1)
+                if (DateTime.Compare(tmp, DateTime.Now) > 0)
                 {
                     break;
                 }

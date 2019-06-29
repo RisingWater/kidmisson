@@ -6,7 +6,7 @@ using System.Xml;
 
 public class CertificationModel : BaseModel
 {
-    public CertificationModel(XmlNode node) : base(node)
+    public CertificationModel(XmlNode node, Database db) : base(node, db)
     {   
 
     }

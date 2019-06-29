@@ -8,12 +8,14 @@ using System.Threading;
 public class BaseModel
 {
     protected XmlNode m_pNode;
+    protected Database m_pDB;
     private object m_csLock;
 
-    public BaseModel(XmlNode node)
+    public BaseModel(XmlNode node, Database db)
 	{
         m_csLock = new object();
         m_pNode = node;
+        m_pDB = db;
 	}
 
     protected String getAttributesValue(String key)
@@ -41,6 +43,8 @@ public class BaseModel
         {
             attr.Value = value;
         }
+
+        m_pDB.SaveDbToFile();
 
         Unlock();
 
