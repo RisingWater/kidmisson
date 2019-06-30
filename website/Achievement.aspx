@@ -12,23 +12,27 @@
         onitemcommand="AchievementRepeater_ItemCommand">
     <ItemTemplate>
         <div class="achievement">
-            <div class="achievenment_block">
-                <div class="achievenment_text"><%#Eval("Description")%></div>
+            <div class="achievement_image">
+                <img src=<%# GetAchievementImage(Eval("ImageFileName").ToString()) %> height="64" width="64" />
             </div>
             <div class="achievenment_block">
+                <div class="achievenment_text"><%#Eval("Description")%></div>
                 <div class="achievenment_progress_out">
                     <div class="achievenment_point"><%#Eval("Progress")%>/<%#Eval("Target")%></div>
                     <div class="achievenment_progress_in" style=<%# GetProgresBarStyle(Convert.ToInt32(Eval("Progress").ToString()), Convert.ToInt32(Eval("Target").ToString())) %>></div>
                 </div>
-            </div>
 
-            <div class="achievenment_block">
-                <div class="achievenment_award">奖励积分:<%#Eval("Award")%>分</div>
-                <div class="achievenment_button" 
-                    style=<%# GetButtonStyle(Convert.ToBoolean(Eval("Done").ToString()), Convert.ToInt32(Eval("Progress").ToString()), Convert.ToInt32(Eval("Target").ToString()))%>
-                    onclick=<%# GetJavaScript(Container.ItemIndex) %>>
-                    领取奖励
+                <div class="achievenment_award">
+                    <div class="achievenment_button" 
+                        style=<%# GetButtonStyle(Convert.ToBoolean(Eval("Done").ToString()), Convert.ToInt32(Eval("Progress").ToString()), Convert.ToInt32(Eval("Target").ToString()))%>
+                        onclick=<%# GetJavaScript(Container.ItemIndex) %>>
+                        领取奖励
+                    </div>
+                    <div>
+                        奖励积分:<%#Eval("Award")%>分
+                    </div>
                 </div>
+                
                 <asp:Button ID="getaward" runat="server" Text="getaward" style="display:none" 
                             CommandName="getaward" CommandArgument='<%#Eval("Id") %>'/>
             </div>

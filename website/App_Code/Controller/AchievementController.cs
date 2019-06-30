@@ -86,6 +86,14 @@ public class AchievementGroupController
         }
     }
 
+    public String ImageFileName
+    {
+        get
+        {
+            return m_pModel.ImageFileName;
+        }
+    }
+
     public Boolean GetAward()
     {
         if (Progress < Target)

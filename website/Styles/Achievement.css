@@ -14,23 +14,31 @@
 {
     font-size:16px;
     font-family:"微软雅黑";
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     font-weight:bold;
-    line-height:24px;
 }
 
 .achievenment_block
 {
-    margin-top:10px;
-    margin-bottom:10px;
-    margin-left:10px;
+    margin-left:80px;
     margin-right:10px;
+}
+
+.achievement_image
+{
+    float:left;
+    margin-left:10px;
+    width:64px;
+    height:64px;
+    background-color:#ffffff;
+    border-radius:5px;
 }
 
 .achievenment_progress_out
 {
     width: 100%;
     background-color: #777777;
+    margin-top:5px;
 }
 
 .achievenment_progress_in {
@@ -47,56 +55,28 @@
     font-family:"微软雅黑";
     font-weight:bold;
     text-align:center;
-    color:#ffffff
+    color:#ffffff;
+    margin: 0px;
+    padding: 0px;
 }
 
 .achievenment_award
 {
-    display:inline-block;
     font-size:12px;
     font-family:"微软雅黑";
-    font-weight:bold;
+    margin-top:5px;
 }
 
 .achievenment_button
 {
     float:right;
     width:80px;
-    height:22px;
-    font-size:12px;
+    height:16px;
+    font-size:10px;
+    line-height:16px;
     font-family:"微软雅黑";
     background-color: #3887c5;
     text-align:center;
     border-radius:5px;
     color:#ffffff;
-    padding-top:3px;
-}
-
-.achievenment_button:hover
-{
-    background-color: #125080;
-}
-
-.achievenment_button a:link
-{
-    color:#ffffff;
-    text-decoration:none;
-}
-
-.achievenment_button a:hover
-{
-    color:#ffffff;
-    text-decoration:underline;
-}
-
-.achievenment_button a:active
-{
-    color:#ffffff;
-    text-decoration:underline;
-}
-
-.achievenment_button a:visited
-{
-    color:#ffffff;
-    text-decoration:none;
 }

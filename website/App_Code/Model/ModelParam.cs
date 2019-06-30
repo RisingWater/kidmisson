@@ -11,4 +11,6 @@ public class ModelParam
     public static Int32 EXCHANGE_RECORD_ID = 0;
     public static Int32 AWARD_RECORD_ID = 1;
     public static Int32 POINT_GET_RECORD_ID = 2;
+
+    public static Int32 AWARD_BOX_ACHIEVEMENT = 8;
 }

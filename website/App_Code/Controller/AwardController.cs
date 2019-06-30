@@ -74,6 +74,11 @@ public class AwardBoxController
                 }
             }
 
+            AchievementsModel achi_model = m_pDb.GetAchievementsModel();
+            AchievementGroupModel group = achi_model.GetAchievementGroup(ModelParam.AWARD_BOX_ACHIEVEMENT);
+            group.SetProgress(1);
+            
+
             Int32 Item_id = SelectItem.ItemId;
             Int32 Count = SelectItem.Number;
 

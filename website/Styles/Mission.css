@@ -43,49 +43,25 @@
 
 .weeky_award
 {
-    display:inline-block;
-    font-size:12px;
+    height:36px;
+    font-size:20px;
     font-family:"微软雅黑";
-    font-weight:bold;
-    line-height:24px;
+    line-height:36px;
 }
 
 .weeky_award_button
 {
     float:right;
-    width:80px;
-    height:22px;
-    font-size:12px;
-    font-family:"微软雅黑";
     background-color: #3887c5;
+    width:80px;
+    height:30px;
+    font-size:16px;
+    line-height:30px;
+    margin-top:5px;
+    font-family:"微软雅黑";
     text-align:center;
     border-radius:5px;
-    color:#ffffff;
-    padding-top:3px;
-}
-
-.weeky_award_button a:link
-{
-    color:#ffffff;
-    text-decoration:none;
-}
-
-.weeky_award_button a:hover
-{
-    color:#ffffff;
-    text-decoration:underline;
-}
-
-.weeky_award_button a:active
-{
-    color:#ffffff;
-    text-decoration:underline;
-}
-
-.weeky_award_button a:visited
-{
-    color:#ffffff;
-    text-decoration:none;
+    color:#ffffff;  
 }
 
 .daily_mission_block
@@ -96,40 +72,42 @@
     margin-right:10px;
 }
 
-.daily_mission_button
+.mission_button
 {
     float:right;
     width:80px;
-    height:22px;
-    font-size:12px;
+    height:30px;
+    font-size:16px;
+    line-height:30px;
+    margin-top:9px;
     font-family:"微软雅黑";
     text-align:center;
     border-radius:5px;
-    color:#ffffff;
-    padding-top:3px;    
+    color:#ffffff;  
 }
 
-
-.daily_mission_button a:link
+.mission_name
 {
-    color:#ffffff;
-    text-decoration:none;
+    height:30px;
+    margin-left:58px;
+    font-size:20px;
+    font-family:"微软雅黑";
+    line-height:30px;
 }
 
-.daily_mission_button a:hover
+.mission_detail
 {
-    color:#ffffff;
-    text-decoration:underline;
+    height:16px;
+    margin-top:3px;
+    margin-left:58px;
+    font-size:12px;
+    font-family:"微软雅黑";
+    line-height:16px;
 }
 
-.daily_mission_button a:active
+.mission_imge
 {
-    color:#ffffff;
-    text-decoration:underline;
-}
-
-.daily_mission_button a:visited
-{
-    color:#ffffff;
-    text-decoration:none;
+    float:left;
+    width:48px;
+    height:48px;
 }

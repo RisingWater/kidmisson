@@ -84,4 +84,9 @@ public partial class Achievement : System.Web.UI.Page
                 "<script>swal('" + Text + "').then((value) => {window.location.href='Achievement.aspx';});</script>");
         }
     }
+
+    public String GetAchievementImage(String ImageFileName)
+    {
+        return "image/" + ImageFileName;
+    }
 }

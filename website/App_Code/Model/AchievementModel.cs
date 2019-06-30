@@ -6,7 +6,7 @@ using System.Xml;
 
 public class AchievementModel : BaseModel
 {
-    public AchievementModel(XmlNode node, MainDatabase db)
+    public AchievementModel(XmlNode node, Database db)
         : base(node, db)
     {
 
@@ -85,11 +85,11 @@ public class AchievementModel : BaseModel
     }
 }
 
-public class AchievementGroupModel : BaseModel
+public class AchievementGroupModel : BaseModel, IComparable<AchievementGroupModel>
 {
     private List<AchievementModel> m_pAchievementList;
 
-    public AchievementGroupModel(XmlNode node, MainDatabase db)
+    public AchievementGroupModel(XmlNode node, Database db)
         : base(node, db)
 	{
         m_pAchievementList = new List<AchievementModel>();
@@ -101,12 +101,37 @@ public class AchievementGroupModel : BaseModel
         }
 	}
 
+    public int CompareTo(AchievementGroupModel other)
+    {
+        if (other == null)
+        {
+            return 1;
+        }
+
+        return DisplayIndex.CompareTo(other.DisplayIndex);
+    }
+
     public Int32 Id
     {
         get
         {
             Int32 Id = -1;
             String tmp = getAttributesValue(@"achievement_group_id");
+            if (tmp != null)
+            {
+                Id = Convert.ToInt32(tmp);
+            }
+
+            return Id;
+        }
+    }
+
+    public Int32 DisplayIndex
+    {
+        get
+        {
+            Int32 Id = 10000;
+            String tmp = getAttributesValue(@"display_index");
             if (tmp != null)
             {
                 Id = Convert.ToInt32(tmp);
@@ -128,6 +153,14 @@ public class AchievementGroupModel : BaseModel
             }
 
             return Id;
+        }
+    }
+
+    public String ImageFileName
+    {
+        get
+        {
+            return getAttributesValue(@"image");
         }
     }
 
@@ -164,7 +197,7 @@ public class AchievementsModel
 {
     private List<AchievementGroupModel> m_pGroupList;
 
-    public AchievementsModel(XmlNode node, MainDatabase db)
+    public AchievementsModel(XmlNode node, Database db)
 	{
         m_pGroupList = new List<AchievementGroupModel>();
 
@@ -173,6 +206,7 @@ public class AchievementsModel
         {
             AchievementGroupModel m = new AchievementGroupModel(tmp, db);
             m_pGroupList.Add(m);
+            m_pGroupList.Sort();
         }
 	}
 
@@ -183,4 +217,20 @@ public class AchievementsModel
             return m_pGroupList;
         }
     }
+
+    public AchievementGroupModel GetAchievementGroup(Int32 GroupId)
+    {
+        AchievementGroupModel ret = null;
+        foreach (AchievementGroupModel tmp in AchievementGroupList)
+        {
+            if (tmp.Id == GroupId)
+            {
+                ret = tmp;
+                break;
+            }
+        }
+
+        return ret;
+    }
+
 }

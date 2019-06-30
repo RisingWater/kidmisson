@@ -8,11 +8,11 @@
     <item item_id="3" description="陪玩碎片" image="piece4.png" exchange_unit="10" />
   </items>
   <pocket>
-    <wallet point="98080" />
-    <pocket_item item_id="0" number="43" />
-    <pocket_item item_id="1" number="88" />
-    <pocket_item item_id="2" number="74" />
-    <pocket_item item_id="3" number="60" />
+    <wallet point="98320" />
+    <pocket_item item_id="0" number="59" />
+    <pocket_item item_id="1" number="99" />
+    <pocket_item item_id="2" number="83" />
+    <pocket_item item_id="3" number="80" />
   </pocket>
   <award>
     <award_box award_id="0" description="铜宝箱" cost="10" image="bronze.png">
@@ -46,121 +46,149 @@
     </award_box>
   </award>
   <achievement>
-    <achievement_group achievement_group_id="0" progress="480">
+    <achievement_group achievement_group_id="0" display_index="100" progress="560" image="math.png">
       <achievement achievement_id="0" description="完成口算100题" done="1" target="100" award="20" />
       <achievement achievement_id="1" description="完成口算200题" done="1" target="200" award="30" />
       <achievement achievement_id="2" description="完成口算400题" done="1" target="400" award="40" />
     </achievement_group>
-    <achievement_group achievement_group_id="1" progress="0">
-      <achievement achievement_id="0" description="大声朗读1个小时" done="0" target="4" award="20" />
+    <achievement_group achievement_group_id="1" display_index="200" progress="41" image="read.png">
+      <achievement achievement_id="0" description="大声朗读1个小时" done="1" target="4" award="20" />
       <achievement achievement_id="1" description="大声朗读2个小时" done="0" target="8" award="30" />
       <achievement achievement_id="2" description="大声朗读4个小时" done="0" target="16" award="40" />
     </achievement_group>
-    <achievement_group achievement_group_id="2" progress="0">
-      <achievement achievement_id="0" description="英语打卡5次" done="0" target="5" award="20" />
+    <achievement_group achievement_group_id="2" display_index="300" progress="20" image="english.png">
+      <achievement achievement_id="0" description="英语打卡5次" done="1" target="5" award="20" />
       <achievement achievement_id="1" description="英语打卡10次" done="0" target="10" award="20" />
       <achievement achievement_id="2" description="英语打卡20次" done="0" target="20" award="20" />
     </achievement_group>
-    <achievement_group achievement_group_id="3" progress="0">
+    <achievement_group achievement_group_id="3" display_index="400" progress="2" image="write.png">
       <achievement achievement_id="0" description="练字3页" done="0" target="3" award="15" />
       <achievement achievement_id="1" description="练字7页" done="0" target="7" award="25" />
       <achievement achievement_id="2" description="练字15页" done="0" target="15" award="35" />
     </achievement_group>
-    <achievement_group achievement_group_id="4" progress="0">
+    <achievement_group achievement_group_id="4" display_index="500" progress="1" image="daily.png">
       <achievement achievement_id="0" description="写日记5次" done="0" target="5" award="20" />
       <achievement achievement_id="1" description="写日记10次" done="0" target="10" award="30" />
       <achievement achievement_id="2" description="写日记20次" done="0" target="20" award="40" />
     </achievement_group>
-    <achievement_group achievement_group_id="5" progress="0">
+    <achievement_group achievement_group_id="5" display_index="600" progress="0" image="sleep.png">
       <achievement achievement_id="0" description="睡觉3次" done="0" target="3" award="15" />
       <achievement achievement_id="1" description="睡觉7次" done="0" target="7" award="25" />
       <achievement achievement_id="2" description="睡觉15次" done="0" target="15" award="35" />
     </achievement_group>
-    <achievement_group achievement_group_id="6" progress="0">
+    <achievement_group achievement_group_id="6" display_index="700" progress="0" image="math_done.png">
       <achievement achievement_id="0" description="口算20题全对" done="0" target="1" award="15" />
       <achievement achievement_id="1" description="口算20题全对5次" done="0" target="5" award="25" />
       <achievement achievement_id="2" description="口算20题全对10次" done="0" target="10" award="35" />
     </achievement_group>
-    <achievement_group achievement_group_id="7" progress="0">
+    <achievement_group achievement_group_id="7" display_index="800" progress="1" image="eat.png">
       <achievement achievement_id="0" description="独立吃饭3次" done="0" target="3" award="15" />
       <achievement achievement_id="1" description="独立吃饭9次" done="0" target="9" award="25" />
       <achievement achievement_id="2" description="独立吃饭21次" done="0" target="21" award="35" />
     </achievement_group>
-    <achievement_group achievement_group_id="8" progress="0">
-      <achievement achievement_id="0" description="获得任务积分250分" done="0" target="250" award="15" />
-      <achievement achievement_id="1" description="获得任务积分1250分" done="0" target="1250" award="25" />
-      <achievement achievement_id="2" description="获得任务积分2500分" done="0" target="2500" award="35" />
-    </achievement_group>
-    <achievement_group achievement_group_id="8" progress="0">
+    <achievement_group achievement_group_id="8" display_index="1000" progress="1" image="awardbox.png">
       <achievement achievement_id="0" description="打开宝箱20次" done="0" target="20" award="15" />
       <achievement achievement_id="1" description="打开宝箱60次" done="0" target="60" award="25" />
       <achievement achievement_id="2" description="打开宝箱150次" done="0" target="150" award="35" />
     </achievement_group>
+    <achievement_group achievement_group_id="9" display_index="900" progress="60" image="point.png">
+      <achievement achievement_id="0" description="获得任务积分250分" done="0" target="250" award="15" />
+      <achievement achievement_id="1" description="获得任务积分1250分" done="0" target="1250" award="25" />
+      <achievement achievement_id="2" description="获得任务积分2500分" done="0" target="2500" award="35" />
+    </achievement_group>
+    <achievement_group achievement_group_id="10" display_index="150" progress="60" image="math.png">
+      <achievement achievement_id="0" description="完成数学暑假作业5页" done="1" target="5" award="20" />
+      <achievement achievement_id="1" description="完成数学暑假作业20页" done="1" target="20" award="30" />
+      <achievement achievement_id="2" description="完成数学暑假作业40页" done="1" target="40" award="50" />
+      <achievement achievement_id="3" description="完成数学暑假作业57页" done="1" target="57" award="100" />
+    </achievement_group>
   </achievement>
   <missions>
-    <mission mission_id="0" description="数学大挑战1 (完成口算20题)" award="10">
+    <mission mission_id="0" name="数学大挑战1" description="完成口算20题" display_index="100" award="10" image="math.png" image_done="math_done.png">
       <associate_achevement achievement_id="0" number="20" />
       <associate_achevement achievement_id="9" number="10" />
     </mission>
-    <mission mission_id="1" description="数学大挑战2 (完成口算20题)" award="10">
+    <mission mission_id="1" name="数学大挑战2" description="完成数学暑假作业一页" display_index="200" award="10" image="math.png" image_done="math_done.png">
       <associate_achevement achievement_id="0" number="20" />
       <associate_achevement achievement_id="9" number="10" />
     </mission>
-    <mission mission_id="2" description="书本真好看1 (独立大声阅读15分钟)" award="10">
-      <associate_achevement achievement_id="1" number="20" />
+    <mission mission_id="2" name="书本真好看1" description="独立大声阅读15分钟" display_index="300" award="10" image="read.png" image_done="read_done.png">
+      <associate_achevement achievement_id="1" number="1" />
       <associate_achevement achievement_id="9" number="10" />
     </mission>
-    <mission mission_id="3" description="书本真好看2 (独立大声阅读15分钟)" award="10">
-      <associate_achevement achievement_id="1" number="20" />
+    <mission mission_id="3" name="书本真好看2" description="独立大声阅读15分钟" display_index="400" award="10" image="read.png" image_done="read_done.png">
+      <associate_achevement achievement_id="1" number="1" />
       <associate_achevement achievement_id="9" number="10" />
     </mission>
-    <mission mission_id="4" description="英语很简单 (英语打卡一次) (10积分)" award="10">
-      <associate_achevement achievement_id="2" number="20" />
+    <mission mission_id="4" name="英语很简单" description="英语打卡一次" display_index="500" award="10" image="english.png" image_done="english_done.png">
+      <associate_achevement achievement_id="2" number="1" />
       <associate_achevement achievement_id="9" number="10" />
     </mission>
-    <mission mission_id="5" description="我的字写的真好1 (练字一页)" award="10">
-      <associate_achevement achievement_id="3" number="20" />
+    <mission mission_id="5" name="我的字写的真好1" description="练字一页" display_index="600" award="10" image="write.png" image_done="write_done.png">
+      <associate_achevement achievement_id="3" number="1" />
       <associate_achevement achievement_id="9" number="10" />
     </mission>
-    <mission mission_id="6" description="我的字写的真好1 (练字一页)" award="10">
-      <associate_achevement achievement_id="3" number="20" />
+    <mission mission_id="6" name="我的字写的真好2" description="练字一页" display_index="700" award="10" image="write.png" image_done="write_done.png">
+      <associate_achevement achievement_id="3" number="1" />
       <associate_achevement achievement_id="9" number="10" />
     </mission>
-    <mission mission_id="7" description="幻影魔腿 (跳绳100下)" award="10">
+    <mission mission_id="7" name="幻影魔腿" description="跳绳100下" display_index="800" award="10" image="sport.png" image_done="sport_done.png">
       <associate_achevement achievement_id="9" number="10" />
     </mission>
-    <mission mission_id="8" description="消灭食物1 (独立吃一顿吃饭，不挑食)" award="10">
-      <associate_achevement achievement_id="7" number="20" />
+    <mission mission_id="8" name="消灭食物1" description="独立吃一顿吃饭" display_index="900" award="10" image="eat.png" image_done="eat_done.png">
+      <associate_achevement achievement_id="7" number="1" />
       <associate_achevement achievement_id="9" number="10" />
     </mission>
-    <mission mission_id="9" description="消灭食物2 (独立吃一顿吃饭，不挑食)" award="10">
-      <associate_achevement achievement_id="7" number="20" />
+    <mission mission_id="9" name="消灭食物2" description="独立吃一顿吃饭" display_index="1000" award="10" image="eat.png" image_done="eat_done.png">
+      <associate_achevement achievement_id="7" number="1" />
       <associate_achevement achievement_id="9" number="10" />
     </mission>
-    <mission mission_id="10" description="美梦成真 (独立睡觉)" award="10">
-      <associate_achevement achievement_id="5" number="20" />
+    <mission mission_id="10" name="美梦成真" description="晚上独自睡觉" display_index="1100" award="10" image="sleep.png" image_done="sleep_done.png">
+      <associate_achevement achievement_id="5" number="1" />
       <associate_achevement achievement_id="9" number="10" />
     </mission>
-    <mission mission_id="11" description="记录我的一天 (写一篇日记)" award="10">
-      <associate_achevement achievement_id="4" number="20" />
+    <mission mission_id="11" name="记录一天" description="写一篇日记" display_index="1200" award="10" image="daily.png" image_done="daily_done.png">
+      <associate_achevement achievement_id="4" number="1" />
       <associate_achevement achievement_id="9" number="10" />
     </mission>
   </missions>
   <week_missions>
-    <week_mission week_mission_id="0" description="每周累计获取100积分" target="100" />
-    <week_mission week_mission_id="1" description="每周累计获取200积分" target="200" />
-    <week_mission week_mission_id="2" description="每周累计获取300积分" target="300" />
-    <week_mission week_mission_id="3" description="每周累计获取400积分" target="400" />
-    <week_mission week_mission_id="4" description="每周累计获取500积分" target="500" />
+    <week_mission week_mission_id="0" description="每周累计获取100积分" target="100">
+      <award_item item_id="1" number="2" />
+    </week_mission>
+    <week_mission week_mission_id="1" description="每周累计获取200积分" target="200">
+      <award_item item_id="2" number="3" />
+    </week_mission>
+    <week_mission week_mission_id="2" description="每周累计获取300积分" target="300">
+      <award_item item_id="1" number="3" />
+    </week_mission>
+    <week_mission week_mission_id="3" description="每周累计获取400积分" target="400">
+      <award_item item_id="0" number="5" />
+    </week_mission>
+    <week_mission week_mission_id="4" description="每周累计获取500积分" target="500">
+      <award_item item_id="3" number="5" />
+    </week_mission>
   </week_missions>
   <weeks>
     <week id="2019-25" number="480">
       <week_mission_done week_mission_id="0" />
     </week>
+    <week id="2019-26" number="730">
+      <week_mission_done week_mission_id="0" />
+      <week_mission_done week_mission_id="1" />
+      <week_mission_done week_mission_id="2" />
+      <week_mission_done week_mission_id="3" />
+      <week_mission_done week_mission_id="4" />
+    </week>
   </weeks>
   <dailys>
     <daily id="2019/6/23">
       <daily_mission_done mission_id="0" />
+    </daily>
+    <daily id="2019/6/30">
+      <daily_mission_done mission_id="0" />
+      <daily_mission_done mission_id="1" />
+      <daily_mission_done mission_id="2" />
     </daily>
   </dailys>
   <historys>
@@ -213,6 +241,21 @@
       <record time="2019/6/29 17:10:15" description="成功开启银宝箱,获得动画碎片3个" />
       <record time="2019/6/29 17:39:49" description="成功开启白金宝箱,获得课外书一本" />
       <record time="2019/6/29 23:34:59" description="成功开启银宝箱,获得动画碎片2个" />
+      <record time="2019/6/30 16:40:59" description="成功开启铜宝箱,获得动画碎片1个" />
+      <record time="2019/6/30 19:51:21" description="获得每周任务奖励，美食碎片3个" />
+      <record time="2019/6/30 19:51:29" description="获得每周任务奖励，玩具碎片3个" />
+      <record time="2019/6/30 19:51:34" description="获得每周任务奖励，动画碎片5个" />
+      <record time="2019/6/30 19:51:39" description="获得每周任务奖励，陪玩碎片5个" />
+      <record time="2019/6/30 19:51:44" description="获得每周任务奖励，陪玩碎片5个" />
+      <record time="2019/6/30 19:53:03" description="获得每周任务奖励，美食碎片3个" />
+      <record time="2019/6/30 19:53:11" description="获得每周任务奖励，玩具碎片3个" />
+      <record time="2019/6/30 19:53:14" description="获得每周任务奖励，动画碎片5个" />
+      <record time="2019/6/30 19:53:17" description="获得每周任务奖励，陪玩碎片5个" />
+      <record time="2019/6/30 19:55:18" description="获得每周任务奖励，玩具碎片2个" />
+      <record time="2019/6/30 19:55:21" description="获得每周任务奖励，美食碎片3个" />
+      <record time="2019/6/30 19:55:24" description="获得每周任务奖励，玩具碎片3个" />
+      <record time="2019/6/30 19:55:27" description="获得每周任务奖励，动画碎片5个" />
+      <record time="2019/6/30 19:55:31" description="获得每周任务奖励，陪玩碎片5个" />
     </records>
     <records record_id="2" description="积分获取记录">
       <record time="2019/6/24 00:01:02" description="完成任务XXXXXXX" point="10" />
@@ -230,6 +273,25 @@
       <record time="2019/6/30 1:48:29" description="获得成就&quot;完成口算100题&quot;" point="20" />
       <record time="2019/6/30 1:48:34" description="获得成就&quot;完成口算200题&quot;" point="30" />
       <record time="2019/6/30 1:48:38" description="获得成就&quot;完成口算400题&quot;" point="40" />
+      <record time="2019/6/30 14:36:46" description="获得成就&quot;完成口算100题&quot;" point="20" />
+      <record time="2019/6/30 14:43:41" description="获得成就&quot;完成口算200题&quot;" point="30" />
+      <record time="2019/6/30 16:36:39" description="完成任务&quot;数学大挑战1&quot;" point="10" />
+      <record time="2019/6/30 16:36:42" description="完成任务&quot;书本真好看1&quot;" point="10" />
+      <record time="2019/6/30 16:36:58" description="完成任务&quot;数学大挑战1&quot;" point="10" />
+      <record time="2019/6/30 16:37:13" description="完成任务&quot;书本真好看2&quot;" point="10" />
+      <record time="2019/6/30 16:38:19" description="完成任务&quot;英语很简单&quot;" point="10" />
+      <record time="2019/6/30 16:38:55" description="完成任务&quot;我的字写的真好1&quot;" point="10" />
+      <record time="2019/6/30 16:39:06" description="完成任务&quot;我的字写的真好2&quot;" point="10" />
+      <record time="2019/6/30 16:40:44" description="完成任务&quot;消灭食物2&quot;" point="10" />
+      <record time="2019/6/30 16:40:52" description="完成任务&quot;数学大挑战2&quot;" point="10" />
+      <record time="2019/6/30 16:41:12" description="完成任务&quot;记录一天&quot;" point="10" />
+      <record time="2019/6/30 16:41:25" description="获得成就&quot;完成口算400题&quot;" point="40" />
+      <record time="2019/6/30 16:41:27" description="获得成就&quot;英语打卡5次&quot;" point="20" />
+      <record time="2019/6/30 16:41:30" description="获得成就&quot;大声朗读1个小时&quot;" point="20" />
+      <record time="2019/6/30 19:15:36" description="完成任务&quot;数学大挑战1&quot;" point="10" />
+      <record time="2019/6/30 19:17:53" description="完成任务&quot;数学大挑战2&quot;" point="10" />
+      <record time="2019/6/30 19:18:51" description="完成任务&quot;数学大挑战1&quot;, 获得积分10分" point="10" />
+      <record time="2019/6/30 19:18:56" description="完成任务&quot;书本真好看1&quot;, 获得积分10分" point="10" />
     </records>
   </historys>
 </root>

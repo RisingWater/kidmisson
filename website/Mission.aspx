@@ -3,6 +3,7 @@
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
     <link href="Styles/Mission.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <div class="text_title">
@@ -15,25 +16,38 @@
         </div>
     </div>
     <div class="weeky_progress_block">
+        <div class="weeky_award_button" ID="weeky_button" runat="server" onclick="JAVAscript:document.getElementById('MainContent_GetAward').click();">领取奖励</div>
         <div class="weeky_award">
             <asp:Label ID="weeky_award_text" runat="server" Text="Label"></asp:Label>
         </div>
-        <div class="weeky_award_button" ID="weeky_button" runat="server">
-            <asp:HyperLink ID="GetAward" runat="server">领取奖励</asp:HyperLink>
-        </div>
+        <asp:Button ID="GetAward" runat="server" Text="领取奖励" BorderStyle="None" style="display:none" OnClick="WeekyAward_Click" />
     </div>
 
     <div class="text_title">
         每日任务进度</div>
-    <asp:Repeater ID="Repeater1" runat="server" 
-        DataSourceID="DailyMissionDataSource">
+    <asp:Repeater ID="DailyMissionRepeater" runat="server" 
+        DataSourceID="DailyMissionDataSource" 
+        onitemcommand="DailyMissionRepeater_ItemCommand">
     <ItemTemplate>
     <div class ="daily_mission_block">
-        <div class="weeky_award"><%#Eval("MissionText")%></div>
-        <div class="daily_mission_button" style=<%#Eval("ButtonStyle")%>><a href=<%#Eval("ButtonUrl")%>><%#Eval("ButtonText")%></a></div>
+        <div class="mission_imge">
+            <img src=<%# GetMissionImage(Eval("ImageFileName").ToString()) %> />
+        </div>
+        <div class="mission_button" style=<%# GetButtonColorStyle(Convert.ToBoolean(Eval("Done").ToString())) %>
+            onclick=<%# GetJavaScript(Container.ItemIndex) %>>
+            <%# GetButtonText(Convert.ToBoolean(Eval("Done").ToString())) %>
+        </div>
+        <div class="mission_name"><%# Eval("Name") %></div>
+        <div class="mission_detail"><%# Eval("Description") %></div>
+        <asp:Button ID="completeMission" runat="server" Text="completeMission" style="display:none" 
+            CommandName="completeMission" CommandArgument='<%#Eval("Id") %>'/>
     </div>
     </ItemTemplate>
     </asp:Repeater>
     <asp:ObjectDataSource ID="DailyMissionDataSource" runat="server" 
-        SelectMethod="GetDailyMissionState" TypeName="XmlDatabase"></asp:ObjectDataSource>
+        SelectMethod="GetMissionList" TypeName="DailyMissionsController">
+        <SelectParameters>
+            <asp:CookieParameter CookieName="userid" Name="userid" Type="String" />
+        </SelectParameters>
+    </asp:ObjectDataSource>
 </asp:Content>
