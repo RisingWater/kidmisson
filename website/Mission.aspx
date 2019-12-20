@@ -3,7 +3,8 @@
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
     <link href="Styles/Mission.css" rel="stylesheet" type="text/css" />
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="Styles/sweetalert.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/sweetalert.min.js"></script>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <div class="text_title">

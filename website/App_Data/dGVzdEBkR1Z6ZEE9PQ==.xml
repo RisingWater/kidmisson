@@ -8,7 +8,7 @@
     <item item_id="3" description="陪玩碎片" image="piece4.png" exchange_unit="10" />
   </items>
   <pocket>
-    <wallet point="97290" />
+    <wallet point="97300" />
     <pocket_item item_id="0" number="58" />
     <pocket_item item_id="1" number="72" />
     <pocket_item item_id="2" number="77" />
@@ -46,7 +46,7 @@
     </award_box>
   </award>
   <achievement>
-    <achievement_group achievement_group_id="0" display_index="100" progress="560" image="math.png">
+    <achievement_group achievement_group_id="0" display_index="100" progress="580" image="math.png">
       <achievement achievement_id="0" description="完成口算100题" done="1" target="100" award="20" />
       <achievement achievement_id="1" description="完成口算200题" done="1" target="200" award="30" />
       <achievement achievement_id="2" description="完成口算400题" done="1" target="400" award="40" />
@@ -91,7 +91,7 @@
       <achievement achievement_id="1" description="打开宝箱60次" done="0" target="60" award="25" />
       <achievement achievement_id="2" description="打开宝箱150次" done="0" target="150" award="35" />
     </achievement_group>
-    <achievement_group achievement_group_id="9" display_index="900" progress="90" image="point.png">
+    <achievement_group achievement_group_id="9" display_index="900" progress="100" image="point.png">
       <achievement achievement_id="0" description="获得任务积分250分" done="0" target="250" award="15" />
       <achievement achievement_id="1" description="获得任务积分1250分" done="0" target="1250" award="25" />
       <achievement achievement_id="2" description="获得任务积分2500分" done="0" target="2500" award="35" />
@@ -180,6 +180,7 @@
       <week_mission_done week_mission_id="3" />
       <week_mission_done week_mission_id="4" />
     </week>
+    <week id="2019-27" number="10" />
   </weeks>
   <dailys>
     <daily id="2019/6/23">
@@ -192,6 +193,9 @@
       <daily_mission_done mission_id="7" />
       <daily_mission_done mission_id="8" />
       <daily_mission_done mission_id="6" />
+    </daily>
+    <daily id="2019/7/2">
+      <daily_mission_done mission_id="0" />
     </daily>
   </dailys>
   <historys>
@@ -314,6 +318,7 @@
       <record time="2019/6/30 20:03:27" description="完成任务&quot;我的字写的真好2&quot;, 获得积分10分" point="10" />
       <record time="2019/6/30 20:05:56" description="获得成就&quot;大声朗读2个小时&quot;" point="30" />
       <record time="2019/6/30 20:06:01" description="获得成就&quot;英语打卡10次&quot;" point="20" />
+      <record time="2019/7/2 10:49:48" description="完成任务&quot;数学大挑战1&quot;, 获得积分10分" point="10" />
     </records>
   </historys>
 </root>

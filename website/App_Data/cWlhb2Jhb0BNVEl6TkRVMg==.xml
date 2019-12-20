@@ -75,9 +75,9 @@
       <achievement achievement_id="2" description="写日记20次" done="0" target="20" award="40" />
     </achievement_group>
     <achievement_group achievement_group_id="5" display_index="600" progress="0" image="sleep.png">
-      <achievement achievement_id="0" description="睡觉3次" done="0" target="3" award="15" />
-      <achievement achievement_id="1" description="睡觉7次" done="0" target="7" award="25" />
-      <achievement achievement_id="2" description="睡觉15次" done="0" target="15" award="35" />
+      <achievement achievement_id="0" description="独立睡觉3次" done="0" target="3" award="15" />
+      <achievement achievement_id="1" description="独立睡觉7次" done="0" target="7" award="25" />
+      <achievement achievement_id="2" description="独立睡觉15次" done="0" target="15" award="35" />
     </achievement_group>
     <achievement_group achievement_group_id="6" display_index="700" progress="1" image="math_done.png">
       <achievement achievement_id="0" description="口算20题全对" done="1" target="1" award="15" />
